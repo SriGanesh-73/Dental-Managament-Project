@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Management</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="dental_index.css" />
+    <script src="dental_script.js"></script>
+    <link rel="icon" href="assets\logo.webp"/>
+</head>
+<body>
+    <div class="main">
+        <div class="overlay"></div>
+        <div class="navbar">
+            <div id="icon">
+                <img src="assets\logo.webp" width="20px" height="20px">
+                <h3>DentaEase</h3>
+            </div>
+            <div id="container">
+                <ul id="menu">
+                    <li id="dropdown">
+                        <a href="#features">Features</a>
+                        <ul id="dropdown-content">
+                            <li><a href="#features1">Electronic Patient Records</a></li>
+                            <li><a href="#features2">Appointment and Schedules</a></li>
+                            <li><a href="#features3">SMS and Email Notifications</a></li>
+                            <li><a href="#features4">Accounts & Cash Management</a></li>
+                            <li><a href="#features5">Reporting System</a></li>
+                            <li><a href="#features6">Document Management</a></li>
+                            <li><a href="#features7">Administrator</a></li>
+                            <li><a href="#features8">Inventory Management</a></li>
+                            <li><a href="#features9">Lab Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button id="open-login"><a href="#">LOGIN</a></button>
+                <button id="open-register"><a href="#">REGISTER</a></button>
+                <span id="menu-btn1">
+                    ☰
+                </span>
+            </div>
+            <span id="menu-btn2">
+                ☰
+            </span>
+        </div>
+        <div id="login-form" class="form-container">
+            <div class="form-box">
+                <span id="close-login" class="close-btn">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <input id="username" type="text" placeholder="Username">
+                    <input id="password" type="password" placeholder="Password">
+                    <button id="submit" type="submit">Login</button>
+                    <p>Don't have an account? <a id="no-account" href="#">Register</a></p>
+                </form>
+            </div>
+        </div>
+        <!-- Register Form -->
+        <div id="register-form" class="form-container">
+            <div class="form-box">
+                <span id="close-register" class="close-btn">&times;</span>
+                <h2>Register</h2>
+                <form>
+                    <input id="username" type="text" placeholder="Username">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="password" type="password" placeholder="Password">
+                    <input id="cn-password" type="password" placeholder="Confirm Password">
+                    <button id="submit" type="submit">Register</button>
+                    <p>Already have an account? <a id="have-account" href="#">Login</a></p>
+                </form>
+            </div>
+        </div>
+        <div id="right-menu">
+            <div id="section1">
+                <a href="#discover">DISCOVER</a>
+                <a href="#manage">MANAGE</a>
+                <a href="#educate">EDUCATE</a>
+                <a href="#buy">BUY</a>
+            </div>
+            <div id="section2">
+                <div id="dropdown1">
+                    <div id="features">
+                        <div id="ele1"><a href="#">Features</a></div>
+                        <div id="ele2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
+                    </div>
+                    <ul id="dropdown-content1">
+                        <li><a href="#features1">Electronic Patient Records</a></li>
+                        <li><a href="#features2">Appointment and Schedules</a></li>
+                        <li><a href="#features3">SMS and Email Notifications</a></li>
+                        <li><a href="#features4">Accounts & Cash Management</a></li>
+                        <li><a href="#features5">Reporting System</a></li>
+                        <li><a href="#features6">Document Management</a></li>
+                        <li><a href="#features7">Administrator</a></li>
+                        <li><a href="#features8">Inventory Management</a></li>
+                        <li><a href="#features9">Lab Management</a></li>
+                    </ul>
+                </div>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#support">Support</a>
+            </div>    
+        </div>
+        <div id="content">
+            <div id="row1" class="scroll-container">
+                <div id="desc1">
+                    <h1>Ultimate Dental Clinic Practice Management Software</h1><br>
+                    <h3>a flexible solution for your dental clinic</h3>
+                    <button id="bt-1">Get Started For Free</button>
+                    <button id="bt-2">Schedule a demo</button>
+                </div>
+                <div class="hidden" id="img1">
+                    <img src="assets\dental-2450766_1280.jpg" width="300px" height="200px">
+                </div>
+            </div>
+            <div id="row2">
+                <h1>Online comprehensive, fully integrated and innovative best dental practice management software that can optimize the complete administration of your dental clinic</h1>
+                <h3>BE PART OF THE DIGITAL REVOLUTION</h3>
+                <button>Register Now</button>
+            </div>
+            <div id="row3">
+                <h1>Our Best of Key features</h1>
+                <div id="grid">
+                    <div class="grid-item">
+                        <img src="icon1.png" alt="Electronic Patient Records">
+                        <h3>Electronic Patient Records</h3>
+                        <p>All patient data stored digitally on secure servers.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon2.png" alt="Appointments and Schedulers">
+                        <h3>Appointments and Schedulers</h3>
+                        <p>Easy to use Appointment Management Module simplifies cabin / chair management.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon3.png" alt="Sms and email notifications">
+                        <h3>Sms and email notifications</h3>
+                        <p>Stay connected with your patients. Send SMS and Email notifications.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon4.png" alt="Accounts & Cash Management">
+                        <h3>Accounts & Cash Management</h3>
+                        <p>Automatic record keeping of income and expenditure.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon5.png" alt="Reporting System">
+                        <h3>Reporting System</h3>
+                        <p>Illegible handwritten prescriptions replaced by printed forms.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon6.png" alt="Document Management">
+                        <h3>Document Management</h3>
+                        <p>Digitally stored documents save space, effort and stationery.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon7.png" alt="Administrator">
+                        <h3>Administrator</h3>
+                        <p>Manage Doctors, Staff, administrators, etc.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon8.png" alt="Inventory Management">
+                        <h3>Inventory Management</h3>
+                        <p>Manage and monitor dental inventory.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="icon9.png" alt="Lab Management">
+                        <h3>Lab Management</h3>
+                        <p>Manage your Dental Lab.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row4">
+                <div id="desc2" class="scroll-container">
+                    <h2>Why Go paperless ?</h2>
+                    <ul>
+                        <li>Improved communication between doctors, staff, lab and patients thus maximizing the efficiency of the clinic</li>
+                        <li>Makes clinical notes and documentation legible, and reduces clinical errors</li>
+                        <li>Easy analysis of your data with dental billing software</li>
+                        <li>Easy access of the data with dental office management software</li>
+                    </ul>
+                    <button id="plan-btn">View Plan</button>
+                </div>
+                <div class="hidden" id="img2">
+                    <img src="assets\go-paperless.webp" width="400px" height="300px">
+                </div>
+            </div>
+            <div id="row5" class="scroll-container">
+                <div class="hidden" id="img3">
+                    <img src="assets\3914790.jpg" width="400px" height="300x">
+                </div>
+                <div id="desc3">
+                    <h1>Book appointment in less than 5 seconds !!</h1>
+                    <ul>
+                        <li>Manage appointments of your patients in different user friendly views with patients waiting time analysis.</li>
+                        <li>Doctor wise appointment slots with colour code.</li>
+                        <li>Automatic reminder for appointments</li>
+                        <li>Option to book appointment online</li>
+                    </ul>
+                    <button id="plan-btn">View Plan</button>
+                </div>
+            </div>
+            <div id="row6" class="scroll-container">
+                <div id="desc4">
+                    <h2>Strong patient communication</h2>
+                    <ul>
+                        <li>Routine Checkup Reminders quarterly, half yearly, annually or custom defined interval.</li>
+                        <li>Automatic Appointment Reminder to Patient at custom defined regular intervals.</li>
+                        <li>Communication with multiple patients simultaneously through messages and mails</li>
+                        <li>Birthday greetngs to the patients</li>
+                    </ul>
+                    <button id="plan-btn">View Plan</button>
+                </div>
+                <div class="hidden" id="img4">
+                    <img src="assets\5625-removebg-preview.png" width="500px" height="400px">
+                </div>
+            </div>
+            <div id="row7" class="scroll-container">
+                <div class="hidden" id="img5">
+                    <img src="assets\hippa-icon.jpg" width="300px" height="300px">
+                </div>
+                <div id="desc5">
+                    <h1>Security.Peace of mind.</h1>
+                    <ul>
+                        <li>Download your data anytime</li>
+                        <li>Data Secured on microsoft azure server</li>
+                        <li>Secured your clinic data to be accessed from fixed location</li>
+                        <li>Two step authentication Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyrights © 2025 DentaEase. All rights reserved.</p>
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>
