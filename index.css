@@ -353,6 +353,7 @@ body.menu-open .overlay {
     justify-content:space-between;
     align-items:center;
     padding:50px;
+    width:100%;
 }
 #row1 #desc1{
     display:block;
@@ -405,6 +406,7 @@ body.menu-open .overlay {
     color:#fff;
     padding:50px;
     background-color: #466e59;
+    width:100%;
 }
 #row2 h3{
     margin-top:20px;
@@ -437,6 +439,7 @@ body.menu-open .overlay {
     align-items: center;
     background-color:white;
     padding:50px;
+    width:100%;
 }
 #row3 #grid{
     display:grid;
@@ -498,6 +501,7 @@ body.menu-open .overlay {
     background-color: #9bd4b5;
     padding:50px;
     color:#2c503c;
+    width:100%;
 }
 #row4 #desc2 ul,#row6 #desc4 ul {
     list-style-type: none;
