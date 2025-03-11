@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menu-btn2"); // Selecting the menu icon
     const menuContainer = document.getElementById("container");
+    const content = document.getElementById("content");
     menuButton.addEventListener("click", function () {
         menuContainer.classList.toggle("active"); // Toggle class to expand/collapse menu
+        menuButton.textContent = menuContainer.classList.contains("active") ? "✖" : "☰";
+    });
+    content.addEventListener("click", function () {
+        menuContainer.classList.remove("active");
+        menuButton.textContent = "☰"; // Reset menu icon
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,25 +93,24 @@ document.addEventListener("DOMContentLoaded", function () {
         registerForm.style.display = "none";
     });
 });
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            // Find image inside the container and animate it
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
             const img = entry.target.querySelector(".hidden");
-            if (img) {
-                img.classList.add("show");
+            const text = entry.target.querySelector(".hidden1");
+            if (entry.isIntersecting) {
+                img?.classList.add("show");
+                text?.classList.add("show1");
+            } else {
+                img?.classList.remove("show");
+                text?.classList.remove("show1");
             }
-        } else {
-            // Remove the animation when scrolled out
-            const img = entry.target.querySelector(".hidden");
-            if (img) {
-                img.classList.remove("show");
-            }
-        }
-    });
-}, { threshold: 0.2 });
+        });
+    }, { threshold: 0.2 });
 
-// Observe only the .scroll-container elements
-document.querySelectorAll(".scroll-container").forEach((container) => observer.observe(container));
+    // Observe only the .scroll-container elements
+    document.querySelectorAll(".scroll-container").forEach((container) => observer.observe(container));
+});
+
 
     
