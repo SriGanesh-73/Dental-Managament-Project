@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="stylesheet" href="dental_index.css" />
-    <script src="dental_index.js"></script>
+    <script src="dental_script.js"></script>
     <link rel="icon" href="assets\logo.webp"/>
 </head>
 <body>
@@ -15,13 +15,13 @@
         <div class="overlay"></div>
         <div class="navbar">
             <div id="icon">
-                <img src="logo.webp" width="20px" height="20px">
+                <img src="assets\logo.webp" width="20px" height="20px">
                 <h3>DentaEase</h3>
             </div>
             <div id="container">
                 <ul id="menu">
                     <li id="dropdown">
-                        <a href="#features">Features</a>
+                        <a href="#features">Features </a>
                         <ul id="dropdown-content">
                             <li><a href="#features1">Electronic Patient Records</a></li>
                             <li><a href="#features2">Appointment and Schedules</a></li>
@@ -33,6 +33,7 @@
                             <li><a href="#features8">Inventory Management</a></li>
                             <li><a href="#features9">Lab Management</a></li>
                         </ul>
+                        
                     </li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact">Contact Us</a></li>
@@ -106,121 +107,125 @@
         </div>
         <div id="content">
             <div id="row1" class="scroll-container">
-                <div id="desc1">
-                    <h1>Ultimate Dental Clinic Practice Management Software</h1><br>
-                    <h3>a flexible solution for your dental clinic</h3>
-                    <button id="bt-1">Get Started For Free</button>
+                <div id="desc1" class="hidden1">
+                    <h1>Welcome to DentaEase</h1>
+                    <h3>Your Smile, Our Priority!</h3>
+                    <button id="bt-1">Book an Appointment</button>
                     <button id="bt-2">Schedule a demo</button>
                 </div>
                 <div class="hidden" id="img1">
-                    <img src="img1.jpg" width="300px" height="200px">
+                    <img src="assets\dental-2450766_1280.jpg" width="350px" height="200px">
                 </div>
             </div>
-            <div id="row2">
-                <h1>Online comprehensive, fully integrated and innovative best dental practice management software that can optimize the complete administration of your dental clinic</h1>
-                <h3>BE PART OF THE DIGITAL REVOLUTION</h3>
-                <button>Register Now</button>
+            <div id="row2" class="scroll-container">
+                <div id="booking" class="hidden1">
+                    <h1>Easy Online Booking</h1>
+                    <h2>Need a checkup or treatment? Schedule your appointment with our experienced dentists today!</h2>
+                    <h3>BE PART OF THE DIGITAL REVOLUTION</h3>
+                    <button>Register Now</button>
+                </div>
             </div>
-            <div id="row3">
+            <div id="row3" class="scroll-container">
                 <h1>Our Best of Key features</h1>
-                <div id="grid">
-                    <div class="grid-item">
+                <div id="grid" class="hidden1">
+                    <div class="grid-item" class="hidden">
                         <img src="icon1.png" alt="Electronic Patient Records">
                         <h3>Electronic Patient Records</h3>
                         <p>All patient data stored digitally on secure servers.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon2.png" alt="Appointments and Schedulers">
                         <h3>Appointments and Schedulers</h3>
                         <p>Easy to use Appointment Management Module simplifies cabin / chair management.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon3.png" alt="Sms and email notifications">
                         <h3>Sms and email notifications</h3>
                         <p>Stay connected with your patients. Send SMS and Email notifications.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon4.png" alt="Accounts & Cash Management">
                         <h3>Accounts & Cash Management</h3>
                         <p>Automatic record keeping of income and expenditure.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon5.png" alt="Reporting System">
                         <h3>Reporting System</h3>
                         <p>Illegible handwritten prescriptions replaced by printed forms.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon6.png" alt="Document Management">
                         <h3>Document Management</h3>
                         <p>Digitally stored documents save space, effort and stationery.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon7.png" alt="Administrator">
                         <h3>Administrator</h3>
                         <p>Manage Doctors, Staff, administrators, etc.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon8.png" alt="Inventory Management">
                         <h3>Inventory Management</h3>
                         <p>Manage and monitor dental inventory.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" class="hidden">
                         <img src="icon9.png" alt="Lab Management">
                         <h3>Lab Management</h3>
                         <p>Manage your Dental Lab.</p>
                     </div>
                 </div>
             </div>
-            <div id="row4">
-                <div id="desc2" class="scroll-container">
+            <div id="row4" class="scroll-container">
+                <div id="desc2" class="hidden1">
                     <h2>Why Go paperless ?</h2>
                     <ul>
-                        <li>Improved communication between doctors, staff, lab and patients thus maximizing the efficiency of the clinic</li>
-                        <li>Makes clinical notes and documentation legible, and reduces clinical errors</li>
-                        <li>Easy analysis of your data with dental billing software</li>
-                        <li>Easy access of the data with dental office management software</li>
+                        <li>Enhances communication among doctors, staff, labs, and patients, improving clinic efficiency.</li>  
+                        <li>Ensures clear and organized clinical notes, reducing the risk of errors.</li>  
+                        <li>Simplifies data analysis with advanced dental billing tools.</li>  
+                        <li>Enables easy access to information through dental office management software.</li>
                     </ul>
                     <button id="plan-btn">View Plan</button>
                 </div>
                 <div class="hidden" id="img2">
-                    <img src="go-paperless.webp" width="400px" height="300px">
+                    <img src="assets\go-paperless.webp" width="400px" height="300px">
                 </div>
             </div>
             <div id="row5" class="scroll-container">
                 <div class="hidden" id="img3">
-                    <img src="3914790.jpg" width="400px" height="300x">
+                    <img src="assets\3914790.jpg" width="400px" height="300x">
                 </div>
-                <div id="desc3">
+                <div id="desc3" class="hidden1">
                     <h1>Book appointment in less than 5 seconds !!</h1>
                     <ul>
-                        <li>Manage appointments of your patients in different user friendly views with patients waiting time analysis.</li>
-                        <li>Doctor wise appointment slots with colour code.</li>
-                        <li>Automatic reminder for appointments</li>
-                        <li>Option to book appointment online</li>
+                        <li>Efficiently manage patient appointments with user-friendly views and waiting time analysis.</li>  
+                        <li>Color-coded appointment slots for each doctor.</li>  
+                        <li>Automated appointment reminders.</li>  
+                        <li>Convenient online appointment booking option.</li>
+
                     </ul>
                     <button id="plan-btn">View Plan</button>
                 </div>
             </div>
             <div id="row6" class="scroll-container">
-                <div id="desc4">
+                <div id="desc4" class="hidden1">
                     <h2>Strong patient communication</h2>
                     <ul>
-                        <li>Routine Checkup Reminders quarterly, half yearly, annually or custom defined interval.</li>
-                        <li>Automatic Appointment Reminder to Patient at custom defined regular intervals.</li>
-                        <li>Communication with multiple patients simultaneously through messages and mails</li>
-                        <li>Birthday greetngs to the patients</li>
+                        <li>Routine checkup reminders at quarterly, half-yearly, annual, or custom intervals.</li>  
+                        <li>Automated appointment reminders for patients at customizable intervals.</li>  
+                        <li>Seamless communication with multiple patients via messages and emails.</li>  
+                        <li>Personalized birthday greetings for patients.</li>
                     </ul>
                     <button id="plan-btn">View Plan</button>
                 </div>
                 <div class="hidden" id="img4">
-                    <img src="5625-removebg-preview.png" width="500px" height="400px">
+                    <img src="assets\5625-removebg-preview.png" width="500px" height="400px">
                 </div>
             </div>
             <div id="row7" class="scroll-container">
                 <div class="hidden" id="img5">
-                    <img src="hippa-icon.jpg" width="300px" height="300px">
+                    <img src="assets\hippa-icon.jpg" width="300px" height="300px">
                 </div>
-                <div id="desc5">
+                <div id="desc5" class="hidden1">
                     <h1>Security.Peace of mind.</h1>
                     <ul>
                         <li>Download your data anytime</li>
