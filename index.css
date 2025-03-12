@@ -383,6 +383,8 @@ body.menu-open .overlay {
 #row1 #bt-1:hover{
     background-color:white;
     border-color: #466e59;
+}
+#row1 #bt-1:hover a{
     color:#466e59;
 }
 #row1 #bt-1 a{
