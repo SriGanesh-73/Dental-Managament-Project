@@ -25,6 +25,9 @@ body {
     z-index: 999;
     display: none;
 }
+a{
+    list_style_type:none;
+}
 
 /* Navbar */
 .main .navbar {
