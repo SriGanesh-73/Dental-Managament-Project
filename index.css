@@ -51,11 +51,12 @@ a{
     margin-left: 20px;
     color:#2E2E2E;
 }
-#icon a{
+#icon h3 a{
+    color:#2E2E2E;
     margin-left: 5px;
     transition:all 0.3s ease-in-out;
 }
-#icon a:hover {
+#icon h3:hover a{
     cursor:pointer;
     font-size:20px;
     color:white;
