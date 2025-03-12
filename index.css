@@ -60,6 +60,9 @@ a{
     font-size:20px;
     color:#fff;
 }
+#icon h3 a{
+    color:#2E2E2E;
+}
 
 /* Navigation Menu (VISIBLE BY DEFAULT FOR DESKTOP) */
 #container {
