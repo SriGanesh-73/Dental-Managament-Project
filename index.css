@@ -26,7 +26,7 @@ body {
     display: none;
 }
 a{
-    list_style_type:none;
+    text-decoration:none;
 }
 
 /* Navbar */
