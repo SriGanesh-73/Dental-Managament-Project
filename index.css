@@ -51,17 +51,14 @@ a{
     margin-left: 20px;
     color:#2E2E2E;
 }
-#icon h3{
+#icon a{
     margin-left: 5px;
     transition:all 0.3s ease-in-out;
 }
-#icon h3:hover{
+#icon a:hover {
     cursor:pointer;
     font-size:20px;
-    color:#fff;
-}
-#icon h3 a{
-    color:#2E2E2E;
+    color:white;
 }
 
 /* Navigation Menu (VISIBLE BY DEFAULT FOR DESKTOP) */
