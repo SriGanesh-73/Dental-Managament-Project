@@ -25,10 +25,9 @@ h1, h2 {
 }
 
 /* Doctor Profiles */
-#doctor-grid,#treatment-list{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#doctor-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -63,10 +62,21 @@ h1, h2 {
     color: #3E6B48;
     margin-top: 10px;
 }
+#treatment-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #doctor-grid, #treatment-list {
+    #doctor-grid{
+        grid-template-columns:repeat(1,1fr);
+    }
+    
+    #treatment-list {
         flex-direction: column;
         align-items: center;
     }
