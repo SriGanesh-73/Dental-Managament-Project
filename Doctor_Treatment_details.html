@@ -4,62 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctors & Treatments | DentaEase</title>
-    <link rel="stylesheet" href="Doctor_Treatement_details.css">
+    <link rel="stylesheet" href="Doctor_Treatment_details.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="header">
-        <h1>Meet Our Expert Dentists</h1>
-        <p>Your smile is our priority!</p>
-    </header>
-
-    <!-- Doctor Profiles Section -->
-    <section class="doctors">
-        <h2>Our Dental Specialists</h2>
-        <div class="doctor-grid">
-            <div class="doctor-card">
-                <img src="doctor1.jpg" alt="Dr. A">
-                <h3>Dr. A</h3>
-                <p>Specialist in Orthodontics</p>
-                <p>Available: Mon - Fri (10 AM - 5 PM)</p>
+    <div class="main">
+        <div class="overlay"></div>
+        <div class="navbar">
+            <div id="icon">
+                <img src="logo.webp" width="20px" height="20px">
+                <h3><a href="index.html">DentaEase</a></h3>
             </div>
-            <div class="doctor-card">
-                <img src="doctor2.jpg" alt="Dr. B">
-                <h3>Dr. B</h3>
-                <p>Endodontics & Root Canal Specialist</p>
-                <p>Available: Tue - Sat (9 AM - 4 PM)</p>
+            <div id="container">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li id="dropdown">
+                        <a href="#features">Features</a>
+                        <ul id="dropdown-content">
+                            <li><a href="#features1">Electronic Patient Records</a></li>
+                            <li><a href="#features2">Appointment and Schedules</a></li>
+                            <li><a href="#features3">SMS and Email Notifications</a></li>
+                            <li><a href="#features4">Accounts & Cash Management</a></li>
+                            <li><a href="#features5">Reporting System</a></li>
+                            <li><a href="#features6">Document Management</a></li>
+                            <li><a href="#features7">Administrator</a></li>
+                            <li><a href="#features8">Inventory Management</a></li>
+                            <li><a href="#features9">Lab Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button id="open-login"><a href="#">LOGIN</a></button>
+                <button id="open-register"><a href="#">REGISTER</a></button>
+                <span id="menu-btn1">
+                    ☰
+                </span>
             </div>
-            <div class="doctor-card">
-                <img src="doctor3.jpg" alt="Dr. C">
-                <h3>Dr. C</h3>
-                <p>Cosmetic Dentistry Expert</p>
-                <p>Available: Mon - Sat (11 AM - 6 PM)</p>
+            <span id="menu-btn2">
+                ☰
+            </span>
+        </div>
+        <div id="login-form" class="form-container">
+            <div class="form-box">
+                <span id="close-login" class="close-btn">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <input id="username" type="text" placeholder="Username">
+                    <input id="password" type="password" placeholder="Password">
+                    <button id="submit" type="submit">Login</button>
+                    <p>Don't have an account? <a id="no-account" href="#">Register</a></p>
+                </form>
             </div>
         </div>
-    </section>
-
-    <!-- Treatment Plans Section -->
-    <section class="treatments">
-        <h2>Our Treatment Plans</h2>
-        <div class="treatment-list">
-            <div class="treatment-card">
-                <h3>Teeth Whitening</h3>
-                <p>Brighten your smile with professional whitening treatments.</p>
-                <span class="price">$100</span>
-            </div>
-            <div class="treatment-card">
-                <h3>Root Canal Therapy</h3>
-                <p>Save your teeth with expert root canal procedures.</p>
-                <span class="price">$250</span>
-            </div>
-            <div class="treatment-card">
-                <h3>Braces & Aligners</h3>
-                <p>Get straight, aligned teeth with our advanced orthodontic solutions.</p>
-                <span class="price">$1500</span>
+        <!-- Register Form -->
+        <div id="register-form" class="form-container">
+            <div class="form-box">
+                <span id="close-register" class="close-btn">&times;</span>
+                <h2>Register</h2>
+                <form>
+                    <input id="username" type="text" placeholder="Username">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="password" type="password" placeholder="Password">
+                    <input id="cn-password" type="password" placeholder="Confirm Password">
+                    <button id="submit" type="submit">Register</button>
+                    <p>Already have an account? <a id="have-account" href="#">Login</a></p>
+                </form>
             </div>
         </div>
-    </section>
+        <div id="right-menu">
+            <div id="section1">
+                <a href="#discover">DISCOVER</a>
+                <a href="#manage">MANAGE</a>
+                <a href="#educate">EDUCATE</a>
+                <a href="#buy">BUY</a>
+            </div>
+            <div id="section2">
+                <div id="dropdown1">
+                    <div id="features">
+                        <div id="ele1"><a href="#">Features</a></div>
+                        <div id="ele2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
+                    </div>
+                    <ul id="dropdown-content1">
+                        <li><a href="#features1">Electronic Patient Records</a></li>
+                        <li><a href="#features2">Appointment and Schedules</a></li>
+                        <li><a href="#features3">SMS and Email Notifications</a></li>
+                        <li><a href="#features4">Accounts & Cash Management</a></li>
+                        <li><a href="#features5">Reporting System</a></li>
+                        <li><a href="#features6">Document Management</a></li>
+                        <li><a href="#features7">Administrator</a></li>
+                        <li><a href="#features8">Inventory Management</a></li>
+                        <li><a href="#features9">Lab Management</a></li>
+                    </ul>
+                </div>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#support">Support</a>
+            </div>    
+        </div>
+        <div id="content">
+            <!-- Header -->
+            <div id="header" class="scroll-container">
+                <div class="hidden1">
+                    <h1>Meet Our Expert Dentists</h1>
+                    <p>Your smile is our priority!</p>
+                </div>
+            </div>
 
+            <!-- Doctor Profiles Section -->
+            <section id="doctors" class="scroll-container">
+                <div class="hidden1">
+                    <h2>Our Dental Specialists</h2>
+                </div>
+                <div id="doctor-grid" class="hidden">
+                    <div class="doctor-card">
+                        <img src="doctor1.jpg" alt="Dr. A">
+                        <h3>Dr. A</h3>
+                        <p>Specialist in Orthodontics</p>
+                        <p>Available: Mon - Fri (10 AM - 5 PM)</p>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="doctor2.jpg" alt="Dr. B">
+                        <h3>Dr. B</h3>
+                        <p>Endodontics & Root Canal Specialist</p>
+                        <p>Available: Tue - Sat (9 AM - 4 PM)</p>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="doctor3.jpg" alt="Dr. C">
+                        <h3>Dr. C</h3>
+                        <p>Cosmetic Dentistry Expert</p>
+                        <p>Available: Mon - Sat (11 AM - 6 PM)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Treatment Plans Section -->
+            <section id="treatments" class="scroll-container">
+                <div class="hidden1">
+                    <h2>Our Treatment Plans</h2>
+                </div>
+                <div id="treatment-list" class="hidden">
+                    <div class="treatment-card">
+                        <h3>Teeth Whitening</h3>
+                        <p>Brighten your smile with professional whitening treatments.</p>
+                        <span class="price">$100</span>
+                    </div>
+                    <div class="treatment-card">
+                        <h3>Root Canal Therapy</h3>
+                        <p>Save your teeth with expert root canal procedures.</p>
+                        <span class="price">$250</span>
+                    </div>
+                    <div class="treatment-card">
+                        <h3>Braces & Aligners</h3>
+                        <p>Get straight, aligned teeth with our advanced orthodontic solutions.</p>
+                        <span class="price">$1500</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Copyrights © 2025 DentaEase. All rights reserved.</p>
+        <span></span>
+    </div>
 </body>
 </html>

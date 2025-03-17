@@ -571,6 +571,8 @@ body.menu-open .overlay {
     font-size: 15px;
     background-color: #385a48;
     padding:20px;
+    width:100%;
+    z-index:1000;
 }
 .hidden {
     opacity: 0;
