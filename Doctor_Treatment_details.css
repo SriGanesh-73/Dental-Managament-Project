@@ -27,9 +27,11 @@ h1, h2 {
 /* Doctor Profiles */
 #doctor-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top:50px;
+    gap:50px;
+    text-align:center;
+    padding:10px;
 }
 
 .doctor-card,.treatment-card {
