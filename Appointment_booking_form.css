@@ -1,7 +1,7 @@
 /* Form Container */
 .appointment-container {
     position:absolute;
-    top:60%;
+    top:80%;
     left:50%;
     transform:translate(-50%,-50%);
     background: #74ae8e;
@@ -30,13 +30,20 @@ form label {
 }
 
 /* Input Fields */
-form input, form textarea {
+form input, form textarea ,#treatment{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #7abd9b;
+    border: 3px solid #7abd9b;
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+form input:focus,form textarea:focus,#treatment:focus{
+    outline:none;
+    box-shadow: 2px 2px 15px 4px #0ad82c;
+}
+form input:hover,form textarea:hover,#treatment:hover{
+    box-shadow: 2px 2px 15px 4px #0ad82c; /* Increased blur for glow effect */
 }
 
 /* Textarea */
@@ -62,6 +69,12 @@ form button {
 form button:hover {
     background-color: #fff;
     color:#7abd9b;
+}
+.error-msg {
+    color: red;
+    font-size: small;
+    display: inline-block;
+    margin-top: 0px;
 }
 
 /* Responsive Design */

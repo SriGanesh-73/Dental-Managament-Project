@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <script src="Appointment_booking_form.js"></script>
+    <script src="Login_Register.js"></script>
 </head>
 <body>
     <div class="main">
@@ -47,35 +48,43 @@
                 ☰
             </span>
         </div>
+        <!-- Login Form -->
         <div id="login-form" class="form-container">
             <div class="form-box">
                 <span id="close-login" class="close-btn">&times;</span>
                 <h2>Login</h2>
-                <form>
-                    <input id="username" type="text" placeholder="Username">
-                    <span id="username_err"></span>
-                    <input id="password" type="password" placeholder="Password">
-                    <span id="passowrd_err"></span>
-                    <button id="submit" type="submit">Login</button>
+                <form id="loginForm">
+                    <input id="login-username" type="text" placeholder="Username">
+                    <span id="login-username_err" class="error-msg"></span>
+                    
+                    <input id="login-password" type="password" placeholder="Password">
+                    <span id="login-password_err" class="error-msg"></span>
+                    
+                    <button id="login-submit" type="submit">Login</button>
                     <p>Don't have an account? <a id="no-account" href="#">Register</a></p>
                 </form>
             </div>
         </div>
+
         <!-- Register Form -->
         <div id="register-form" class="form-container">
             <div class="form-box">
                 <span id="close-register" class="close-btn">&times;</span>
                 <h2>Register</h2>
-                <form>
-                    <input id="username" type="text" placeholder="Username">
-                    <span id="username_err"></span>
-                    <input id="email" type="email" placeholder="Email">
-                    <span id="email_err"></span>
-                    <input id="password" type="password" placeholder="Password">
-                    <span id="passowrd_err"></span>
-                    <input id="cn-password" type="password" placeholder="Confirm Password">
-                    <span id="cn-password_err"></span>
-                    <button id="submit" type="submit">Register</button>
+                <form id="registerForm">
+                    <input id="register-username" type="text" placeholder="Username">
+                    <span id="register-username_err" class="error-msg"></span>
+
+                    <input id="register-email" type="email" placeholder="Email">
+                    <span id="register-email_err" class="error-msg"></span>
+
+                    <input id="register-password" type="password" placeholder="Password">
+                    <span id="register-password_err" class="error-msg"></span>
+
+                    <input id="register-cn-password" type="password" placeholder="Confirm Password">
+                    <span id="register-cn-password_err" class="error-msg"></span>
+
+                    <button id="register-submit" type="submit">Register</button>
                     <p>Already have an account? <a id="have-account" href="#">Login</a></p>
                 </form>
             </div>
@@ -112,28 +121,47 @@
         </div> 
         <div class="appointment-container">
             <h1>Book an Appointment</h1>
-            <form action="#" method="POST">
+            <form id="appointmentForm" action="#" method="POST">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
+                <span id="name_err" class="error-msg"></span>
+        
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
+                <span id="email_err" class="error-msg"></span>
+        
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-
+                <span id="phone_err" class="error-msg"></span>
+        
                 <label for="date">Select Date</label>
                 <input type="date" id="date" name="date" required>
-
+                <span id="date_err" class="error-msg"></span>
+        
                 <label for="time">Select Time</label>
                 <input type="time" id="time" name="time" required>
-
+                <span id="time_err" class="error-msg"></span>
+        
+                <label for="treatment">Select Treatment</label>
+                <select id="treatment" name="treatment" required>
+                    <option value="" disabled selected>Select a treatment</option>
+                    <option value="teeth_whitening">Teeth Whitening</option>
+                    <option value="root_canal">Root Canal Therapy</option>
+                    <option value="braces_aligners">Braces and Aligners</option>
+                    <option value="extraction">Extraction</option>
+                    <option value="filling">Filling</option>
+                    <option value="denture_removal">Denture Removal</option>
+                    <option value="dental_implant">Dental Implant</option>
+                    <option value="caps_crowns">Caps and Crowns</option>
+                </select>
+                <span id="treatment_err" class="error-msg"></span>
+        
                 <label for="message">Additional Message</label>
                 <textarea id="message" name="message" placeholder="Enter any details..."></textarea>
-
+        
                 <button type="submit">Book Appointment</button>
             </form>
-        </div>
+        </div>        
     </div>
 
 </body>
