@@ -253,6 +253,14 @@ a{
 .close-btn:hover {
     color: white;
 }
+/* Error message styling */
+.error-msg {
+    color: red;
+    font-size: small;
+    display: inline-block;
+    margin-top: 0px;
+}
+
 /* Form styling */
 
 /* Right Side Menu */

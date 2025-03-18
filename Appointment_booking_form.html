@@ -53,7 +53,9 @@
                 <h2>Login</h2>
                 <form>
                     <input id="username" type="text" placeholder="Username">
+                    <span id="username_err"></span>
                     <input id="password" type="password" placeholder="Password">
+                    <span id="passowrd_err"></span>
                     <button id="submit" type="submit">Login</button>
                     <p>Don't have an account? <a id="no-account" href="#">Register</a></p>
                 </form>
@@ -66,9 +68,13 @@
                 <h2>Register</h2>
                 <form>
                     <input id="username" type="text" placeholder="Username">
+                    <span id="username_err"></span>
                     <input id="email" type="email" placeholder="Email">
+                    <span id="email_err"></span>
                     <input id="password" type="password" placeholder="Password">
+                    <span id="passowrd_err"></span>
                     <input id="cn-password" type="password" placeholder="Confirm Password">
+                    <span id="cn-password_err"></span>
                     <button id="submit" type="submit">Register</button>
                     <p>Already have an account? <a id="have-account" href="#">Login</a></p>
                 </form>
