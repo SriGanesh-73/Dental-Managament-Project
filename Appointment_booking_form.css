@@ -1,7 +1,7 @@
 /* Form Container */
-.appointment-container {
+#appointment-container {
     position:absolute;
-    top:80%;
+    top:70%;
     left:50%;
     transform:translate(-50%,-50%);
     background: #74ae8e;
@@ -14,7 +14,7 @@
 }
 
 /* Heading */
-.appointment-container h1 {
+#appointment-container h1 {
     color: white;
     font-size: 24px;
     margin-bottom: 20px;
