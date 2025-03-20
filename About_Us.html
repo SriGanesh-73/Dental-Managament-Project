@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Booking</title>
-    <link rel="stylesheet" href="Appointment_booking_form.css">
+    <title>About Us - DentaEase</title>
+    <link rel="stylesheet" href="About_Us.css">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    <script src="Appointment_booking_form.js"></script>
+    <script src="About_Us.js"></script>
     <script src="Login_Register.js"></script>
+    <script src="Appointment_booking_form.js"></script>
 </head>
 <body>
     <div class="main">
@@ -36,7 +37,6 @@
                         </ul>
                     </li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="About_Us.html">About Us</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
                 <button id="open-login"><a href="#">LOGIN</a></button>
@@ -119,51 +119,56 @@
                 <a href="#contact">Contact Us</a>
                 <a href="#support">Support</a>
             </div> 
-        </div> 
-        <div id="appointment-container" class="scroll-container">
-            <h1>Book an Appointment</h1>
-            <form id="appointmentForm" action="#" method="POST" class="hidden">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <span id="name_err" class="error-msg"></span>
-        
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <span id="email_err" class="error-msg"></span>
-        
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                <span id="phone_err" class="error-msg"></span>
-        
-                <label for="date">Select Date</label>
-                <input type="date" id="date" name="date" required>
-                <span id="date_err" class="error-msg"></span>
-        
-                <label for="time">Select Time</label>
-                <input type="time" id="time" name="time" required>
-                <span id="time_err" class="error-msg"></span>
-        
-                <label for="treatment">Select Treatment</label>
-                <select id="treatment" name="treatment" required>
-                    <option value="" disabled selected>Select a treatment</option>
-                    <option value="teeth_whitening">Teeth Whitening</option>
-                    <option value="root_canal">Root Canal Therapy</option>
-                    <option value="braces_aligners">Braces and Aligners</option>
-                    <option value="extraction">Extraction</option>
-                    <option value="filling">Filling</option>
-                    <option value="denture_removal">Denture Removal</option>
-                    <option value="dental_implant">Dental Implant</option>
-                    <option value="caps_crowns">Caps and Crowns</option>
-                </select>
-                <span id="treatment_err" class="error-msg"></span>
-        
-                <label for="message">Additional Message</label>
-                <textarea id="message" name="message" placeholder="Enter any details..."></textarea>
-        
-                <button type="submit">Book Appointment</button>
-            </form>
-        </div>        
-    </div>
+        </div>
+        <div id="content">
+            <header>
+                <h1>About Us</h1>
+                <p>Your Smile, Our Priority!</p>
+            </header>
+            
+            <section class="content1">
+                <div class="container">
+                    <h2>Our Mission</h2>
+                    <p>At DentaEase, we are dedicated to providing high-quality dental care using advanced technology while ensuring patient comfort and satisfaction.</p>
+                </div>
 
+                <div class="team-section">
+                    <h2>Meet Our Team</h2>
+                    <div class="team">
+                        <div class="team-member">
+                            <img src="assets/doctor_1.jpg" alt="Dr. John Doe">
+                            <h3>Dr. John Doe</h3>
+                            <p>Chief Dentist with 20+ years of experience.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/doctor_1.jpg" alt="Dr. Jane Smith">
+                            <h3>Dr. Jane Smith</h3>
+                            <p>Specialist in Orthodontics and Cosmetic Dentistry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li>Teeth Cleaning & Whitening</li>
+                        <li>Dental Implants</li>
+                        <li>Braces & Aligners</li>
+                        <li>Root Canal Treatment</li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: contact@dentaease.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 DentaEase. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
