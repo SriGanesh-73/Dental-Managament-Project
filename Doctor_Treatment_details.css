@@ -36,7 +36,6 @@ h1, h2 {
 
 .doctor-card,.treatment-card {
     background: #74ae8e;
-    border: 2px solid #74ae8e;
     padding: 40px;
     width:250px;
     border-radius: 10px;
@@ -44,8 +43,13 @@ h1, h2 {
     transition:all 0.3s ease-in-out;
 }
 .doctor-card:hover,.treatment-card:hover{
-    transform: translateY(-10px);
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
+    background-color: #fff;
+    color: #0ad82c;
+}
+.doctor-card:hover img,.treatment-card:hover img{
+    border:1px solid #0ad82c;
 }
 
 .doctor-card img {
