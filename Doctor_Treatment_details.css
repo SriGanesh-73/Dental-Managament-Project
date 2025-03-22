@@ -1,12 +1,4 @@
 /* General Styles */
-#content{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    flex-grow:1;
-}
 /* Header */
 #header{
     background-color: #385a48;
@@ -14,7 +6,7 @@
     padding: 20px;
     color: white;
     width:100%;
-    margin-bottom:60px;
+    margin-bottom:30px;
 }
 .main {
     min-height: 100vh; /* Ensures the main container takes at least the full screen height */
@@ -29,6 +21,7 @@ h1, h2 {
     display:grid;
     grid-template-columns: repeat(3,1fr);
     margin-top:50px;
+    margin-bottom:50px;
     gap:50px;
     text-align:center;
     padding:10px;
@@ -74,6 +67,7 @@ h1, h2 {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin-top:50px;
 }
 
 /* Responsive Design */
