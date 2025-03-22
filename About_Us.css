@@ -117,7 +117,8 @@ footer {
     background-color: #315A43;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
     width:100%;
+    font-size:small;
 }
