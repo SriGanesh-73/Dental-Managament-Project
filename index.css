@@ -272,7 +272,7 @@ a{
 }
 
 .main #right-menu {
-    position: fixed;
+    position: sticky;
     top: 0;
     right: -250px; /* Initially hidden */
     width: 250px;
