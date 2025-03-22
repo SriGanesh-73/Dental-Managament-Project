@@ -9,6 +9,7 @@ body {
     background-color: #d8f3e5;
     overflow-x: hidden;
     position:relative;
+    font-family:'Poppins',sans-serif;
 }
 
 .main {

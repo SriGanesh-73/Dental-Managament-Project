@@ -1,9 +1,7 @@
 /* Form Container */
 #appointment-container {
-    position:absolute;
-    top:70%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    position: relative; /* Ensures it's inside the normal document flow */
+    margin: 120px auto; /* Adds space from the top */
     background: #74ae8e;
     padding: 30px;
     border-radius: 10px;
@@ -12,7 +10,6 @@
     max-width: 600px;
     text-align: center;
 }
-
 /* Heading */
 #appointment-container h1 {
     color: white;
@@ -80,6 +77,6 @@ form button:hover {
 /* Responsive Design */
 @media (max-width: 600px) {
     .appointment-container {
-        width: 90%;
+        width: 80%;
     }
 }
