@@ -1,12 +1,4 @@
 /* General Styles */
-#content{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    flex-grow:1;
-}
 /* Header */
 #header{
     background-color: #385a48;
@@ -14,7 +6,7 @@
     padding: 20px;
     color: white;
     width:100%;
-    margin-bottom:60px;
+    margin-bottom:30px;
 }
 .main {
     min-height: 100vh; /* Ensures the main container takes at least the full screen height */
@@ -25,18 +17,18 @@ h1, h2 {
 }
 
 /* Doctor Profiles */
-#doctor-grid {
-    display: grid;
+#doctor-grid{
+    display:grid;
     grid-template-columns: repeat(3,1fr);
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    margin-top:50px;
+    margin-bottom:50px;
+    gap:50px;
+    text-align:center;
+    padding:10px;
 }
 
 .doctor-card,.treatment-card {
     background: #74ae8e;
-    border: 2px solid #74ae8e;
     padding: 40px;
     width:250px;
     border-radius: 10px;
@@ -44,8 +36,13 @@ h1, h2 {
     transition:all 0.3s ease-in-out;
 }
 .doctor-card:hover,.treatment-card:hover{
-    transform: translateY(-10px);
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
+    background-color: #fff;
+    color: #0ad82c;
+}
+.doctor-card:hover img,.treatment-card:hover img{
+    border:1px solid #0ad82c;
 }
 
 .doctor-card img {
@@ -57,15 +54,6 @@ h1, h2 {
     border-radius:8px;
 }
 
-/* Treatment Plans */
-#treatment-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
 .price {
     display: block;
     font-size: 18px;
@@ -73,11 +61,23 @@ h1, h2 {
     color: #3E6B48;
     margin-top: 10px;
 }
+#treatment-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top:50px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #doctor-grid, #treatment-list {
-        grid-template-columns: repeat(1,1fr);
+    #doctor-grid{
+        grid-template-columns:repeat(1,1fr);
+    }
+    
+    #treatment-list {
+        flex-direction: column;
         align-items: center;
     }
 }

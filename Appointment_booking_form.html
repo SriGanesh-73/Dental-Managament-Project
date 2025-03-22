@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Appointment_booking_form.css">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script src="Appointment_booking_form.js"></script>
+    <script src="Login_Register.js"></script>
 </head>
 <body>
     <div class="main">
@@ -32,8 +34,10 @@
                             <li><a href="#features8">Inventory Management</a></li>
                             <li><a href="#features9">Lab Management</a></li>
                         </ul>
+                        
                     </li>
                     <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
                 <button id="open-login"><a href="#">LOGIN</a></button>
@@ -45,89 +49,121 @@
             <span id="menu-btn2">
                 ☰
             </span>
+            <div id="right-menu">
+                <div id="section1">
+                    <a href="#discover">DISCOVER</a>
+                    <a href="#manage">MANAGE</a>
+                    <a href="#educate">EDUCATE</a>
+                    <a href="#buy">BUY</a>
+                </div>
+                <div id="section2">
+                    <div id="dropdown1">
+                        <div id="features">
+                            <a id="ele1">Features</a>
+                            <span id="ele2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></span>
+                        </div>
+                        <ul id="dropdown-content1">
+                            <li><a href="#features1">Electronic Patient Records</a></li>
+                            <li><a href="#features2">Appointment and Schedules</a></li>
+                            <li><a href="#features3">SMS and Email Notifications</a></li>
+                            <li><a href="#features4">Accounts & Cash Management</a></li>
+                            <li><a href="#features5">Reporting System</a></li>
+                            <li><a href="#features6">Document Management</a></li>
+                            <li><a href="#features7">Administrator</a></li>
+                            <li><a href="#features8">Inventory Management</a></li>
+                            <li><a href="#features9">Lab Management</a></li>
+                        </ul>
+                    </div>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#support">Support</a>
+                </div>    
+            </div>
         </div>
+        <!-- Login Form -->
         <div id="login-form" class="form-container">
             <div class="form-box">
                 <span id="close-login" class="close-btn">&times;</span>
                 <h2>Login</h2>
-                <form>
-                    <input id="username" type="text" placeholder="Username">
-                    <input id="password" type="password" placeholder="Password">
-                    <button id="submit" type="submit">Login</button>
+                <form id="loginForm">
+                    <input id="login-username" type="text" placeholder="Username">
+                    <span id="login-username_err" class="error-msg"></span>
+                    
+                    <input id="login-password" type="password" placeholder="Password">
+                    <span id="login-password_err" class="error-msg"></span>
+                    
+                    <button id="login-submit" type="submit">Login</button>
                     <p>Don't have an account? <a id="no-account" href="#">Register</a></p>
                 </form>
             </div>
         </div>
+
         <!-- Register Form -->
         <div id="register-form" class="form-container">
             <div class="form-box">
                 <span id="close-register" class="close-btn">&times;</span>
                 <h2>Register</h2>
-                <form>
-                    <input id="username" type="text" placeholder="Username">
-                    <input id="email" type="email" placeholder="Email">
-                    <input id="password" type="password" placeholder="Password">
-                    <input id="cn-password" type="password" placeholder="Confirm Password">
-                    <button id="submit" type="submit">Register</button>
+                <form id="registerForm">
+                    <input id="register-username" type="text" placeholder="Username">
+                    <span id="register-username_err" class="error-msg"></span>
+
+                    <input id="register-email" type="email" placeholder="Email">
+                    <span id="register-email_err" class="error-msg"></span>
+
+                    <input id="register-password" type="password" placeholder="Password">
+                    <span id="register-password_err" class="error-msg"></span>
+
+                    <input id="register-cn-password" type="password" placeholder="Confirm Password">
+                    <span id="register-cn-password_err" class="error-msg"></span>
+
+                    <button id="register-submit" type="submit">Register</button>
                     <p>Already have an account? <a id="have-account" href="#">Login</a></p>
                 </form>
             </div>
         </div>
-        <div id="right-menu">
-            <div id="section1">
-                <a href="#discover">DISCOVER</a>
-                <a href="#manage">MANAGE</a>
-                <a href="#educate">EDUCATE</a>
-                <a href="#buy">BUY</a>
-            </div>
-            <div id="section2">
-                <div id="dropdown1">
-                    <div id="features">
-                        <div id="ele1"><a href="#">Features</a></div>
-                        <div id="ele2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
-                    </div>
-                    <ul id="dropdown-content1">
-                        <li><a href="#features1">Electronic Patient Records</a></li>
-                        <li><a href="#features2">Appointment and Schedules</a></li>
-                        <li><a href="#features3">SMS and Email Notifications</a></li>
-                        <li><a href="#features4">Accounts & Cash Management</a></li>
-                        <li><a href="#features5">Reporting System</a></li>
-                        <li><a href="#features6">Document Management</a></li>
-                        <li><a href="#features7">Administrator</a></li>
-                        <li><a href="#features8">Inventory Management</a></li>
-                        <li><a href="#features9">Lab Management</a></li>
-                    </ul>
-                </div>
-                <a href="#pricing">Pricing</a>
-                <a href="#contact">Contact Us</a>
-                <a href="#support">Support</a>
-            </div> 
-        </div> 
-        <div class="appointment-container">
+        <div id="appointment-container" class="scroll-container">
             <h1>Book an Appointment</h1>
-            <form action="#" method="POST">
+            <form id="appointmentForm" action="#" method="POST" class="hidden">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
+                <span id="name_err" class="error-msg"></span>
+        
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
+                <span id="email_err" class="error-msg"></span>
+        
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-
+                <span id="phone_err" class="error-msg"></span>
+        
                 <label for="date">Select Date</label>
                 <input type="date" id="date" name="date" required>
-
+                <span id="date_err" class="error-msg"></span>
+        
                 <label for="time">Select Time</label>
                 <input type="time" id="time" name="time" required>
-
+                <span id="time_err" class="error-msg"></span>
+        
+                <label for="treatment">Select Treatment</label>
+                <select id="treatment" name="treatment" required>
+                    <option value="" disabled selected>Select a treatment</option>
+                    <option value="teeth_whitening">Teeth Whitening</option>
+                    <option value="root_canal">Root Canal Therapy</option>
+                    <option value="braces_aligners">Braces and Aligners</option>
+                    <option value="extraction">Extraction</option>
+                    <option value="filling">Filling</option>
+                    <option value="denture_removal">Denture Removal</option>
+                    <option value="dental_implant">Dental Implant</option>
+                    <option value="caps_crowns">Caps and Crowns</option>
+                </select>
+                <span id="treatment_err" class="error-msg"></span>
+        
                 <label for="message">Additional Message</label>
                 <textarea id="message" name="message" placeholder="Enter any details..."></textarea>
-
+        
                 <button type="submit">Book Appointment</button>
             </form>
-        </div>
+        </div>      
     </div>
-
 </body>
 </html>
