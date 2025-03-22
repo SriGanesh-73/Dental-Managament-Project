@@ -8,6 +8,7 @@
 body {
     background-color: #d8f3e5;
     overflow-x: hidden;
+    position:relative;
 }
 
 .main {
@@ -37,7 +38,8 @@ a{
     padding: 10px 20px;
     background-color: #A7E3C4;
     color: #2E2E2E;
-    position:fixed;
+    position:sticky;
+    top:0px;
     z-index:1000;
     height: 60px;
     font-weight: bold;
@@ -272,8 +274,8 @@ a{
 }
 
 .main #right-menu {
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top:0px;
     right: -250px; /* Initially hidden */
     width: 250px;
     height: 100vh;
@@ -309,7 +311,10 @@ a{
 
 #right-menu #dropdown1 #dropdown-content1 {
     list-style-type: none;
-    display: none; /* Initially hidden */
+    display: block; 
+    visibility:none;
+    opacity:0; /* Initially hidden */
+    max-height:0px;
     background-color: #466e59;
     color: #fff;
     width: 100%;
@@ -317,22 +322,26 @@ a{
 }
 
 #right-menu #section2 #dropdown1.active #dropdown-content1 {
-    display: block;
+    max-height: 400px;
+    opacity:1;
+    visibility:visible;
 }
 
 #right-menu #section2 #dropdown1 #features {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:0px;
+    cursor:pointer;
 }
 
-#right-menu #section2 #dropdown1 #features #ele1, 
-#right-menu #section2 #dropdown1 #features #ele2 {
+#right-menu #section2 #dropdown1 #features #ele1{
     transition: all 0.5s ease-in-out;
 }
 
 #right-menu #section2 #dropdown1 #features #ele2 {
     transform: rotate(-90deg);
+    transition: all 0.5s ease-in-out;
 }
 
 #right-menu #section2 #dropdown1.active #features #ele2 {
