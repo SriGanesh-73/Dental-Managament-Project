@@ -491,7 +491,10 @@ body.menu-open .overlay {
     transform: scale(1.05);
     box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
     background-color: #fff;
-    color: #0ad82c;
+    color: #0ad82c; 
+}
+.grid-item:hover img{
+    animation:squish 0.4s ease-in-out;
 }
 .grid-item h3 {
     font-size: 18px;
@@ -507,6 +510,29 @@ body.menu-open .overlay {
     width: 50px; /* Adjust icon size */
     height: auto;
     margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+}
+@keyframes squish {
+    0% {
+        transform: scale(1);
+        opacity:0;
+    }
+    20% {
+        transform: scale(0.7); /* Stretch Up */
+        opacity:0.1;
+    }
+    40% {
+        transform: scale(1.1); /* Squish Down */
+        opacity:0.5;
+    }
+    60%{
+        transform: scale(0.9); /* Squish Down */
+        opacity:0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity:1;
+    }
 }
 #row3 h1{
     position:relative;
