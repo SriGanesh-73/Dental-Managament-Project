@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #C8E6C9; /* Light Green */
     color: #333;
 }
 header {
-    background-color: #0044cc;
+    background-color: #3E5E3A; /* Dark Green */
     color: white;
     text-align: center;
     padding: 1em;
@@ -16,7 +16,7 @@ main {
     text-align: center;
 }
 footer {
-    background-color: #222;
+    background-color: #3E5E3A; /* Dark Green */
     color: white;
     text-align: center;
     padding: 10px;
@@ -42,7 +42,21 @@ footer {
     }
 }
 
-/* Adjusting Forms & Buttons */
+/* Styling Buttons */
+button {
+    background-color: #5A7D5A; /* Olive Green */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3E5E3A; /* Dark Green */
+}
+
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -51,27 +65,21 @@ form {
     margin: auto;
 }
 
-input, textarea, button {
+input, textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
+    border: 1px solid #5A7D5A; /* Olive Green */
 }
 
-button {
-    background-color: #0044cc;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #003399;
+input:focus, textarea:focus {
+    border-color: #3E5E3A; /* Dark Green */
 }
 
 /* FAQ Style */
 .faq-item h3 {
     cursor: pointer;
-    color: #0044cc;
+    color: #3E5E3A;
 }
 .answer {
     display: none;
