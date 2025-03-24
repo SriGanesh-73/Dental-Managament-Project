@@ -24,3 +24,66 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 0.8em;
+    }
+    main {
+        padding: 15px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Adjusting Forms & Buttons */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003399;
+}
+
+/* FAQ Style */
+.faq-item h3 {
+    cursor: pointer;
+    color: #0044cc;
+}
+.answer {
+    display: none;
+    margin-top: 5px;
+}
+
+/* Mobile FAQ Adjustments */
+@media (max-width: 480px) {
+    .faq-item h3 {
+        font-size: 16px;
+    }
+    .answer {
+        font-size: 14px;
+    }
+}
