@@ -63,7 +63,8 @@ a{
 #icon h3:hover a{
     cursor:pointer;
     font-size:20px;
-    color:white;
+    text-shadow: 0 0 5px #0ad82c, 0 0 10px #0ad82c, 0 0 15px #0ad82c, 0 0 20px #0ad82c !important; /* More glow */
+    color: #fff;
 }
 
 /* Navigation Menu (VISIBLE BY DEFAULT FOR DESKTOP) */
@@ -93,9 +94,12 @@ a{
     padding: 10px;
     color: #2E2E2E;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 #menu li a:hover {
+    cursor:pointer;
+    text-shadow: 0 0 5px #0ad82c, 0 0 10px #0ad82c, 0 0 15px #0ad82c, 0 0 20px #0ad82c !important; /* More glow */
     color: #fff;
 }
 
@@ -107,6 +111,7 @@ a{
 
 #dropdown #dropdown-content {
     display:block;
+    white-space: nowrap;
     position:absolute;
     top:200%;
     left: 0;
@@ -115,7 +120,7 @@ a{
     min-width: 200px;
     z-index: 1;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    width: 250px;
+    width: fit-content;
     transition:max-height 0.3s ease-in-out,opacity 0.3s ease-in-out,visibility 0.3s ease-in-out;
     opacity:0;
     visibility:hidden;
@@ -126,6 +131,11 @@ a{
 #dropdown #dropdown-content li{
     padding:5px;
     margin:5px;
+}
+#dropdown #dropdown-content li:hover{
+    cursor:pointer;
+    text-shadow: 0 0 5px #0ad82c, 0 0 10px #0ad82c, 0 0 15px #0ad82c, 0 0 20px #0ad82c !important; /* More glow */
+    color: #fff;
 }
 /* Show dropdown on hover (Desktop Mode) */
 #dropdown.active #dropdown-content {
@@ -142,6 +152,7 @@ a{
     border: 1px solid #466e59;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 #container button a {
@@ -151,12 +162,14 @@ a{
 }
 
 #container button:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
     background-color: #fff;
-    border-color: #466e59;
+    border-color:#0ad82c; 
 }
 
 #container button:hover a {
-    color: #466e59;
+    color: #0ad82c;
 }
 
 /* Mobile Menu (Hamburger Icon) */
@@ -226,9 +239,11 @@ a{
     transition:all 0.5s ease-in-out;
 }
 #login-form button:hover,#register-form button:hover{
-    background-color:white;
-    border-color: #466e59;
-    color:#466e59;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
+    background-color: #fff;
+    color: #0ad82c; 
+    border-color:#0ad82c;
 }
 #login-form p,#register-form p{
     text-align:center;
@@ -396,25 +411,32 @@ body.menu-open .overlay {
 }
 #row1 #bt-2{
     background-color: #52c385;
-    border: 1px solid #52c385;
+    border: 2px solid #52c385;
     margin-left:10px;
 }
 #row1 #bt-1:hover{
-    background-color:white;
-    border-color: #466e59;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
+    background-color: #fff; 
+    border-color:#0ad82c;
 }
 #row1 #bt-1:hover a{
-    color:#466e59;
+    color: #0ad82c;
 }
 #row1 #bt-1 a{
     color:white;
 }
 #row1 #bt-2 a{
-    color:white;
+    color:#fff;
 }
 #row1 #bt-2:hover{
-    background-color:#385a48;
-    border-color:#466e59;
+    transform:scale(0.95);
+    background-color:white;
+    border-color:#52c385;
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
+}
+#row1 #bt-2:hover a{
+    color:#52c385;
 }
 #row1 #desc1 h1{
     color:#2E2E2E;
@@ -461,6 +483,7 @@ body.menu-open .overlay {
     background-color:white;
     color:#52c385;
     border-color:#52c385;
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
 }
 .main #content #row3{
     display:flex;
@@ -492,6 +515,7 @@ body.menu-open .overlay {
     box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
     background-color: #fff;
     color: #0ad82c; 
+    border-color:#0ad82c;
 }
 .grid-item:hover img{
     animation:squish 0.4s ease-in-out;
@@ -582,9 +606,11 @@ body.menu-open .overlay {
     transition:all 0.5s ease-in-out;
 }
 #plan-btn:hover{
-    background-color: white;
-    color:#385a48;
-    border-color:#385a48;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 4px #0ad82c !important; /* More glow */
+    background-color: #fff;
+    color: #0ad82c; 
+    border-color:#0ad82c;
 }
 #row5,#row7{
     display:flex;
@@ -642,7 +668,7 @@ body.menu-open .overlay {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 600px), (hover: none) {
+@media screen and (max-width: 768px), (hover: none) {
     .main #menu-btn2 {
         display: block;
         position: fixed;
