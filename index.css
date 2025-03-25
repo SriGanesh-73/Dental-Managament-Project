@@ -634,9 +634,88 @@ body.menu-open .overlay {
 #row5 #desc3 ul li,#row7 #desc5 ul li{
     padding:5px;
 }
+/* FAQ Section Container */
+#row8 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #9bd4b5;
+    padding: 50px;
+    color: #000;
+    width: 100%;
+}
+
+/* Heading Styling */
+#row8 h2 {
+    color: #2c503c;
+}
+
+/* FAQ Container */
+#row8 main {
+    width: 100%;
+}
+
+/* Style each FAQ item */
+#row8 main .faq-item {
+    border-bottom: 1px solid #25362d;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Style the question (h3) */
+#row8 main .faq-item h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style the answer */
+#row8 main .answer {
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show answer when active */
+#row8 main .faq-item.active .answer {
+    max-height: 200px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Add hover effect on question */
+#row8 main .faq-item h3:hover {
+    text-shadow: 0 0 5px #0ad82c, 0 0 10px #0ad82c, 0 0 15px #0ad82c, 0 0 20px #0ad82c;
+    color: #fff;
+}
+
+/* Style the arrow */
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 8px;
+    transform: rotate(90deg);
+}
+
+/* Rotate arrow when FAQ item is active */
+#row8 main .faq-item.active .arrow {
+    transform: rotate(270deg);
+}
+
 #footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color:white;
     font-weight: 10;
@@ -648,6 +727,13 @@ body.menu-open .overlay {
     position:relative;
     bottom:0;
     left:0;
+}
+#footer #landing_pages a{
+    color:#f1f1f1;
+    font-size: small;
+}
+#footer #landing_pages a:hover{
+    color:#0ad82c;
 }
 .hidden {
     opacity: 0;

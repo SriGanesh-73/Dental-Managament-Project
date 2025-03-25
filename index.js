@@ -111,6 +111,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Observe only the .scroll-container elements
     document.querySelectorAll(".scroll-container").forEach((container) => observer.observe(container));
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll(".faq-item h3");
+
+    faqItems.forEach((question) => {
+        question.addEventListener("click", function () {
+            const faqItem = this.parentElement;
+            const answer = faqItem.querySelector(".answer");
+
+            // Toggle active class
+            faqItem.classList.toggle("active");
+            
+            answer.classList.toggle("active");
+
+            // Toggle arrow rotation
+            this.querySelector(".arrow").classList.toggle("rotate");
+        });
+    });
+});
+
+
 
 
     
