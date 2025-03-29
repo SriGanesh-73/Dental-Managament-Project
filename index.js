@@ -51,46 +51,52 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.querySelector(".overlay");
     const loginForm = document.getElementById("login-form");
     const registerForm = document.getElementById("register-form");
-    const no_account = document.getElementById('no-account');
-    const have_account = document.getElementById('have-account'); 
+    const no_account = document.getElementById("no-account");
+    const have_account = document.getElementById("have-account");
+
+    function showForm(form) {
+        overlay.style.display = "block";
+        form.classList.add("show");
+    }
+
+    function hideForm(form) {
+        form.classList.remove("show");
+        setTimeout(() => {
+            overlay.style.display = "none";
+        }, 500); // Matches transition duration
+    }
 
     document.getElementById("open-login").addEventListener("click", function () {
-        overlay.style.display = "block";
-        loginForm.style.display = "block";
-        registerForm.style.display = "none";
+        showForm(loginForm);
+        registerForm.classList.remove("show");
     });
 
     document.getElementById("open-register").addEventListener("click", function () {
-        overlay.style.display = "block";
-        registerForm.style.display = "block";
-        loginForm.style.display = "none";
+        showForm(registerForm);
+        loginForm.classList.remove("show");
     });
 
     document.getElementById("close-login").addEventListener("click", function () {
-        overlay.style.display = "none";
-        loginForm.style.display = "none";
+        hideForm(loginForm);
     });
 
     document.getElementById("close-register").addEventListener("click", function () {
-        overlay.style.display = "none";
-        registerForm.style.display = "none";
-    });
-    no_account.addEventListener("click", function () {
-        overlay.style.display = "block";
-        loginForm.style.display = "none";
-        registerForm.style.display = "block";
-    });
-    have_account.addEventListener("click", function () {
-        overlay.style.display = "block";
-        registerForm.style.display = "none";
-        loginForm.style.display = "block";
+        hideForm(registerForm);
     });
 
-    // Close when clicking outside the form
+    no_account.addEventListener("click", function () {
+        loginForm.classList.remove("show");
+        showForm(registerForm);
+    });
+
+    have_account.addEventListener("click", function () {
+        registerForm.classList.remove("show");
+        showForm(loginForm);
+    });
+
     overlay.addEventListener("click", function () {
-        overlay.style.display = "none";
-        loginForm.style.display = "none";
-        registerForm.style.display = "none";
+        hideForm(loginForm);
+        hideForm(registerForm);
     });
 });
 document.addEventListener("DOMContentLoaded", function () {

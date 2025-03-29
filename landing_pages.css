@@ -14,7 +14,7 @@ header {
 main {
     display:flex;
     flex-direction: column;
-    gap:20px;
+    line-height: 50px;
     padding: 20px;
     text-align: center;
     background-color:white;
@@ -40,10 +40,6 @@ main:hover{
     }
     main {
         padding: 15px;
-    }
-    footer {
-        font-size: 12px;
-        padding: 8px;
     }
 }
 
@@ -73,6 +69,7 @@ form {
     align-items: center;
     max-width: 400px;
     margin: auto;
+    padding:20px;
 }
 
 input, textarea {
