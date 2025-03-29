@@ -4,25 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
-    <link rel="stylesheet" href="privacy-policy.css">
+    <link rel="stylesheet" href="landing_pages.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="Login_Register.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Privacy Policy</h1>
-    </header>
-    <main>
-        
-        <h2>Patient Data Privacy</h2>
-        <p>We ensure the confidentiality of your medical records and personal data.</p>
-        <h2>Cookie Policy</h2>
-        <p>We use cookies to improve user experience. By using our website, you consent to our cookie policy.</p>
-        <h2>Data Security</h2>
-        <p>All transactions and patient records are encrypted for maximum security.</p>
-        
-    </main>
-    <footer>
-        <p>&copy; 2025 Dental Clinic. All rights reserved.</p>
-    </footer>
-    <script src="privacy-policy.js"></script>
+    <div class="main">
+        <div class="overlay"></div>
+        <div class="navbar">
+            <div id="icon">
+                <img src="assets/logo.webp" width="20px" height="20px">
+                <h3><a href="index.html">DentaEase</a></h3>
+            </div>
+            <div id="container">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li id="dropdown">
+                        <a href="#features">Features </a>
+                        <ul id="dropdown-content">
+                            <li><a href="#features1">Electronic Patient Records</a></li>
+                            <li><a href="#features2">Appointment and Schedules</a></li>
+                            <li><a href="#features3">SMS and Email Notifications</a></li>
+                            <li><a href="#features4">Accounts & Cash Management</a></li>
+                            <li><a href="#features5">Reporting System</a></li>
+                            <li><a href="#features6">Document Management</a></li>
+                            <li><a href="#features7">Administrator</a></li>
+                            <li><a href="#features8">Inventory Management</a></li>
+                            <li><a href="#features9">Lab Management</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <button id="open-login"><a href="#">LOGIN</a></button>
+                <button id="open-register"><a href="#">REGISTER</a></button>
+                <span id="menu-btn1">
+                    ☰
+                </span>
+            </div>
+            <span id="menu-btn2">
+                ☰
+            </span>
+            <div id="right-menu">
+                <div id="section1">
+                    <a href="#discover">DISCOVER</a>
+                    <a href="#manage">MANAGE</a>
+                    <a href="#educate">EDUCATE</a>
+                    <a href="#buy">BUY</a>
+                </div>
+                <div id="section2">
+                    <div id="dropdown1">
+                        <div id="features">
+                            <a id="ele1">Features</a>
+                            <span id="ele2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></span>
+                        </div>
+                        <ul id="dropdown-content1">
+                            <li><a href="#features1">Electronic Patient Records</a></li>
+                            <li><a href="#features2">Appointment and Schedules</a></li>
+                            <li><a href="#features3">SMS and Email Notifications</a></li>
+                            <li><a href="#features4">Accounts & Cash Management</a></li>
+                            <li><a href="#features5">Reporting System</a></li>
+                            <li><a href="#features6">Document Management</a></li>
+                            <li><a href="#features7">Administrator</a></li>
+                            <li><a href="#features8">Inventory Management</a></li>
+                            <li><a href="#features9">Lab Management</a></li>
+                        </ul>
+                    </div>
+                    <a href="#pricing">Pricing</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#support">Support</a>
+                </div>    
+            </div>
+        </div>
+        <!-- Login Form -->
+        <div id="login-form" class="form-container">
+            <div class="form-box">
+                <span id="close-login" class="close-btn">&times;</span>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input id="login-username" type="text" placeholder="Username">
+                    <span id="login-username_err" class="error-msg"></span>
+                    
+                    <input id="login-password" type="password" placeholder="Password">
+                    <span id="login-password_err" class="error-msg"></span>
+                    
+                    <button id="login-submit" type="submit">Login</button>
+                    <p>Don't have an account? <a id="no-account" href="#">Register</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form-container">
+            <div class="form-box">
+                <span id="close-register" class="close-btn">&times;</span>
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <input id="register-username" type="text" placeholder="Username">
+                    <span id="register-username_err" class="error-msg"></span>
+
+                    <input id="register-email" type="email" placeholder="Email">
+                    <span id="register-email_err" class="error-msg"></span>
+
+                    <input id="register-password" type="password" placeholder="Password">
+                    <span id="register-password_err" class="error-msg"></span>
+
+                    <input id="register-cn-password" type="password" placeholder="Confirm Password">
+                    <span id="register-cn-password_err" class="error-msg"></span>
+
+                    <button id="register-submit" type="submit">Register</button>
+                    <p>Already have an account? <a id="have-account" href="#">Login</a></p>
+                </form>
+            </div>
+        </div>
+        <header>
+            <h1>Privacy Policy</h1>
+        </header>
+        <main>
+            
+            <h2>Patient Data Privacy</h2>
+            <p>We ensure the confidentiality of your medical records and personal data.</p>
+            <h2>Cookie Policy</h2>
+            <p>We use cookies to improve user experience. By using our website, you consent to our cookie policy.</p>
+            <h2>Data Security</h2>
+            <p>All transactions and patient records are encrypted for maximum security.</p>
+            <h2>Patient Data Privacy</h2>
+            <p>We ensure the confidentiality of your medical records and personal data.</p>
+            <h2>Cookie Policy</h2>
+            <p>We use cookies to improve user experience. By using our website, you consent to our cookie policy.</p>
+            <h2>Data Security</h2>
+            <p>All transactions and patient records are encrypted for maximum security.</p>
+            <h2>Patient Data Privacy</h2>
+            <p>We ensure the confidentiality of your medical records and personal data.</p>
+            <h2>Cookie Policy</h2>
+            <p>We use cookies to improve user experience. By using our website, you consent to our cookie policy.</p>
+            <h2>Data Security</h2>
+            <p>All transactions and patient records are encrypted for maximum security.</p>
+            
+        </main>
+        <div id="footer">
+            <p>Copyrights © 2025 DentaEase. All rights reserved.</p>
+            <div id="landing_pages">
+                <a href="terms.html">Terms and Conditions</a>
+                <span>|</span>
+                <a href="privacy-policy.html">Privacy and Policy</a>
+                <span>|</span>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

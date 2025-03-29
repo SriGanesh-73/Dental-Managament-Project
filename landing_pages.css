@@ -14,15 +14,17 @@ header {
 main {
     padding: 20px;
     text-align: center;
+    background-color:white;
+    width:fit-content;
+    border-radius:15px;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:100px;
+    transition:transform 0.3s ease-in-out;
 }
-footer {
-    background-color: #315A43; /* Dark Green */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+main:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 4px #656665 !important; /* More glow */
 }
 
 /* Responsive Design */
