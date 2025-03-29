@@ -303,6 +303,10 @@ a{
     background: #466e59; /* Adjust color */
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
+    overflow-y:auto;
+}
+::-webkit-scrollbar{
+    display:none;
 }
 
 #right-menu #section1, #section2 {
