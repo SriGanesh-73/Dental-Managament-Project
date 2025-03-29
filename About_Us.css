@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family:'Poppins',sans-serif;
+    font-family:'Poppi',sans-serif;
     margin: 0;
     padding: 0;
     background-color: #D0E6CF; /* Light Mint Green */
@@ -111,14 +111,4 @@ h2 {
     padding: 15px;
     border-radius: 8px;
     margin-top: 20px;
-}
-
-footer {
-    background-color: #315A43;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    width:100%;
-    font-size:small;
 }
